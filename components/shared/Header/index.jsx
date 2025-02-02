@@ -8,7 +8,7 @@ import Menu from './Menu'
 function Header() {
     return (
         <div className="w-full border-b">
-            <div className="max-w-7xl lg:mx-auto p-5 md:px-10 w-full flex justify-between items-center">
+            <div className="lg:mx-auto p-5 md:px-10 w-full flex justify-between items-center">
                 <div className="flex justify-start items-center">
                     <Link href="/" className="flex justify-start items-center">
                         <Image
@@ -20,7 +20,7 @@ function Header() {
                         />
                     </Link>
                 </div>
-                <div className="space-x-2">
+                <div className="flex justify-end items-center">
                     <Menu />
                 </div>
             </div>
