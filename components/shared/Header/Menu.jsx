@@ -9,12 +9,14 @@ function Menu() {
     <>
       <nav className="hidden md:flex w-full gap-1">
         <div className="flex">
+          <Link href="/">
           <Button
             variant="ghost"
             className="focus-visible:ring-0 focus-visible:ring-offset-0"
           >
-            <Link href="/">Home</Link>
+            Home
           </Button>
+            </Link>
           <Button
             variant="ghost"
             className="focus-visible:ring-0 focus-visible:ring-offset-0"

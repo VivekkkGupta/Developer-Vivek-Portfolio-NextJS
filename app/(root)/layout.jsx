@@ -1,4 +1,4 @@
-import Footer from '@/components/shared/Footer'
+import Footer from '@/components/shared/Footer/page'
 import Header from '@/components/shared/Header'
 import React from 'react'
 
