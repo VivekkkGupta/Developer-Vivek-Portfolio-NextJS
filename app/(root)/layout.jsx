@@ -5,7 +5,7 @@ import React from 'react'
 export default function RootLatout({ children }) {
     return (
         <>
-            <div className="flex h-screen flex-col w-full">
+            <div className="flex min-h-screen flex-col w-full relative">
                 <Header />
                 <main>{children}</main>
                 <Footer />
