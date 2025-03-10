@@ -19,8 +19,6 @@ const ModeToggle = () => {
 
   useEffect(() => setMounted(true), []);
 
-  if (!mounted) return null;
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -28,7 +26,10 @@ const ModeToggle = () => {
           variant="ghost"
           className="focus-visible:ring-0 focus-visible:ring-offset-0"
         >
-          {theme == "light" ? (
+          {
+          !mounted ?(
+            <SunMoonIcon />
+          ) : theme == "light" ? (
             <SunIcon />
           ) : theme == "dark" ? (
             <MoonIcon />
