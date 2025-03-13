@@ -1,4 +1,4 @@
-import { MenuIcon, Sun, SunIcon, UserIcon } from "lucide-react";
+import { MenuData } from "@/lib/data";
 import Link from "next/link";
 import React from "react";
 import ModeToggle from "./mode-toggle";
@@ -18,14 +18,14 @@ function Menu() {
               Home
             </Button>
           </Link>
-          <Link href="/blog">
+          {/* <Link href="/blog">
             <Button
               variant="ghost"
               className="focus-visible:ring-0 focus-visible:ring-offset-0"
             >
               Blog
             </Button>
-          </Link>
+          </Link> */}
           <Link href="/projects">
             <Button
               variant="ghost"
@@ -48,6 +48,14 @@ function Menu() {
               className="focus-visible:ring-0 focus-visible:ring-offset-0"
             >
               Resume
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button
+              variant="ghost"
+              className="focus-visible:ring-0 focus-visible:ring-offset-0"
+            >
+              Contact
             </Button>
           </Link>
         </div>

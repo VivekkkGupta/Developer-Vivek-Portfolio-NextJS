@@ -1,11 +1,8 @@
-
 import React from "react";
-import { APP_NAME } from "@/lib/constants";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FlaskConical, BookOpen, GraduationCap } from "lucide-react";
-import SvgResize from "@/components/shared/SvgResize/SvgResize";
-import {svgs} from "@/lib/svgs";
+import MySkills from "@/components/shared/MySkills/MySkills";
+import HomeProjects from "@/components/shared/Projects/HomeProjects";
 
 export default function HomePage() {
   const buttons = [
@@ -32,7 +29,6 @@ export default function HomePage() {
     },
   ];
 
-
   return (
     <div className="w-full px-5 py-10 overflow-auto flex flex-col gap-10">
       {/* Introduction */}
@@ -41,13 +37,16 @@ export default function HomePage() {
           Hi, I am <span className="text-violet-500">Vivek Kumar Gupta</span>
         </h1>
         <p className="">
-          I am a Software Engineer with 1+ years of Industry experience. Worked
-          on various projects and have experience in building scalable and
-          complex web applications.
+          I am a Software Engineer based in India, skilled in building scalable,
+          interactive web applications using Next.js, Vite, React.js, Mongo DB,
+          Express.js, Node.js, Redis, Kafka, Socket.io.
+        </p>
+        <p className="">
+          Looking for Fulltime Software Engineering job opportunities to utilize
+          my skills.
         </p>
         <p className="">
           This is my place for sharing my thoughts, projects, and experiences.
-          Have a good read!
         </p>
       </div>
 
@@ -74,63 +73,10 @@ export default function HomePage() {
       </div>
 
       {/* My Skills */}
-      <div className="flex flex-col gap-5">
-        <h2 className="font-extrabold tracking-wide text-3xl">My skills</h2>
-        <p className="">
-          I have experience in building scalable and complex web applications
-          using below technologies.
-        </p>
-        <div className="flex items-center gap-2">
-          <h3 className="flex items-center">Front End : </h3>
-          <SvgResize svgicon={svgs['html']} />
-          <SvgResize svgicon={svgs["css"]} />
-          <SvgResize svgicon={svgs["javascript"]} />
-          <SvgResize svgicon={svgs["nextjs"]} />
-          <SvgResize svgicon={svgs["reactjs"]} />
-        </div>
-        <div className="flex items-center gap-2">
-          <h3 className="flex items-center">Backend End : </h3>
-          <SvgResize svgicon={svgs['nodejs']} />
-          <SvgResize svgicon={svgs["expressjs"]} />
-        </div>
-        <div className="flex items-center gap-2">
-          <h3 className="flex items-center">Database : </h3>
-          <SvgResize svgicon={svgs['mongodb']} />
-          <SvgResize svgicon={svgs["mysql"]} />
-          <SvgResize svgicon={svgs["redis"]} />
-        </div>
-        <div className="flex items-center gap-2">
-          <h3 className="flex items-center">Other Skills : </h3>
-          <SvgResize svgicon={svgs['docker']} />
-          <SvgResize svgicon={svgs["aws"]} />
-          <SvgResize svgicon={svgs["git"]} />
-          <SvgResize svgicon={svgs["github"]} />
-        </div>
-      </div>
+      <MySkills />
 
       {/* Selected projects */}
-      <div className="flex flex-col gap-5">
-        <h2 className="font-extrabold tracking-wide text-3xl">
-          Selected Projects
-        </h2>
-        <p className="">
-          I am a Software Engineer with 1+ years of Industry experience. Worked
-          on various projects and have experience in building scalable and
-          complex web applications.
-        </p>
-      </div>
-
-      {/* Latest Articles */}
-      <div className="flex flex-col gap-5">
-        <h2 className="font-extrabold tracking-wide text-3xl">
-          Latest Articles
-        </h2>
-        <p className="">
-          I am a Software Engineer with 1+ years of Industry experience. Worked
-          on various projects and have experience in building scalable and
-          complex web applications.
-        </p>
-      </div>
+      <HomeProjects/>
     </div>
   );
 }

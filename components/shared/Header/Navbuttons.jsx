@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuCheckboxItem,
 } from "@/components/ui/dropdown-menu";
+import { MenuData } from "@/lib/data";
 
 function Navbuttons() {
   return (
@@ -33,60 +34,16 @@ function Navbuttons() {
             <MenuIcon size={24} />
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="z-50 w-full">
-          <DropdownMenuLabel>Menu</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuCheckboxItem>
-            <Link href="/">
-              <Button
-                variant="ghost"
-                className="focus-visible:ring-0 focus-visible:ring-offset-0"
-              >
-                Home
-              </Button>
+        <DropdownMenuContent className="mr-[20px] z-50 w-[300px] max-h-[100vh] overflow-y-auto">
+          {MenuData.map((menu, index) => (
+            <Link href={menu.url} key={index} className="cursor-pointer">
+              <DropdownMenuCheckboxItem className="cursor-pointer py-3">
+                
+                  {menu.title}
+                
+              </DropdownMenuCheckboxItem>
             </Link>
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem>
-            <Link href="/blog">
-              <Button
-                variant="ghost"
-                className="focus-visible:ring-0 focus-visible:ring-offset-0"
-              >
-                Blog
-              </Button>
-            </Link>
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem>
-            <Link href="/projects">
-              <Button
-                variant="ghost"
-                className="focus-visible:ring-0 focus-visible:ring-offset-0"
-              >
-                Projects
-              </Button>
-            </Link>
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem>
-            <Link href="/about">
-              <Button
-                variant="ghost"
-                className="focus-visible:ring-0 focus-visible:ring-offset-0"
-              >
-                About
-              </Button>
-            </Link>
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem>
-            <Link href="/resume">
-              <Button
-                variant="ghost"
-                className="focus-visible:ring-0 focus-visible:ring-offset-0"
-              >
-                Resume
-              </Button>
-            </Link>
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem></DropdownMenuCheckboxItem>
+          ))}
         </DropdownMenuContent>
       </DropdownMenu>
     </>
