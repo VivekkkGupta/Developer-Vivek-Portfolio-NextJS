@@ -18,7 +18,7 @@ function Header() {
         setProgress(val);
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         window.addEventListener('scroll', scrollProgressBar);
         return () => {
             window.removeEventListener('scroll', scrollProgressBar);
@@ -41,7 +41,7 @@ function Header() {
                                 />
                             </div>
                         </Link>
-                        
+
                     </div>
                 </div>
                 <div className="flex justify-end items-center">
