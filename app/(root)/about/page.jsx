@@ -9,8 +9,8 @@ import MySkills from "@/components/shared/MySkills/MySkills";
 export default function AboutPage() {
   return (
     <div className="flex md:flex-row flex-col items-start justify-between relative">
-      <div className="px-6 py-[8rem] leftside w-full md:w-1/3 flex flex-col items-center justify-center gap-10 md:sticky md:top-0">
-        <h1 className="font-extrabold text-6xl text-center">About</h1>
+      <div className="px-6 py-8 md:py-[8rem] leftside w-full md:w-1/3 flex flex-col items-center justify-center gap-10 md:sticky md:top-0">
+        <h1 className="font-extrabold text-5xl md:text-6xl text-center">About</h1>
         <div className="flex items-center justify-center rounded-full h-[20rem] w-[20rem] bg-gray-400 overflow-hidden">
           <Image
             src={vivekimage}
@@ -43,7 +43,7 @@ export default function AboutPage() {
           <p className=" leading-relaxed mb-6">
             Beyond development, I enjoy Cricket, Chess, and I am a space enthusiast.
           </p>
-          <MySkills/>
+          <MySkills />
         </div>
       </div>
     </div>

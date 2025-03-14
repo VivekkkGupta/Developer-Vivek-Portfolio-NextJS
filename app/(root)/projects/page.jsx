@@ -1,11 +1,10 @@
 import React from "react";
-import { APP_NAME } from "@/lib/constants";
 import { ProjectsData } from "@/lib/data";
 
 function Page() {
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="w-full flex justify-center font-extrabold text-6xl py-4 pb-5">
+    <div className="container mx-auto px-2 md:px-0">
+      <h1 className="w-full flex justify-center font-extrabold text-5xl md:text-6xl py-8">
         Projects
       </h1>
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2">
@@ -28,8 +27,8 @@ function Page() {
               />
             </div>
             <div>
-            <p className="text-gray-600 mb-4">{project.description}</p>
-            <p className="text-gray-400 text-sm">{project.date}</p>
+              <p className="text-gray-600 mb-4">{project.description}</p>
+              <p className="text-gray-400 text-sm">{project.date}</p>
             </div>
           </a>
         ))}

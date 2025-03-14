@@ -4,7 +4,7 @@ export default function ResumePage() {
 
   return (
     <div>
-      <h1 className="w-full flex justify-center font-extrabold text-6xl py-4">
+      <h1 className="w-full flex justify-center font-extrabold text-5xl md:text-6xl py-8">
         Resume
       </h1>
       <div className="w-full flex justify-center">

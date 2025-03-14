@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 function page() {
   return (
     <div className="flex flex-col gap-4">
-      <h1 className="font-extrabold text-6xl text-center py-4">Contact</h1>
+      <h1 className="font-extrabold text-5xl md:text-6xl text-center py-8">Contact</h1>
       <p className="text-center text-lg">
         Feel free to reach out to me on any of the following platforms:
       </p>

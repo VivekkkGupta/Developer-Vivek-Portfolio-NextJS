@@ -33,7 +33,7 @@ export default function HomePage() {
     <div className="w-full px-5 py-10 overflow-auto flex flex-col gap-10">
       {/* Introduction */}
       <div className="flex flex-col gap-5">
-        <h1 className="font-extrabold tracking-tight text-6xl py-5">
+        <h1 className="font-extrabold tracking-tight text-4xl md:text-6xl py-5">
           Hi, I am <span className="text-violet-500">Vivek Kumar Gupta</span>
         </h1>
         <p className="">
@@ -76,7 +76,7 @@ export default function HomePage() {
       <MySkills />
 
       {/* Selected projects */}
-      <HomeProjects/>
+      <HomeProjects />
     </div>
   );
 }
