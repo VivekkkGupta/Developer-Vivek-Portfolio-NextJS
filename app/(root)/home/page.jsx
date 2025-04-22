@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { FlaskConical, BookOpen, GraduationCap } from "lucide-react";
 import MySkills from "@/components/shared/MySkills/MySkills";

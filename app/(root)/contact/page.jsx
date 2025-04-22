@@ -1,5 +1,4 @@
 import { SocialData } from "@/lib/data";
-import React from "react";
 import { SocialIcon } from "react-social-icons";
 
 function page() {
